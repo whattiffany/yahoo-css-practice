@@ -8,16 +8,24 @@ body {
 a {
     text-decoration: none;
 }
+
 /*滑過才有底線*/
-a:hover
-{
-    text-decoration:underline;
+a:hover {
+    text-decoration: underline;
 }
+/*取消li項目符號*/
+li {
+    list-style-type: none;
+}
+
 /*標頭固定*/
 .header {
     position: fixed;
     width: 100vw;
+    background-color: #FAFAFC;
+    z-index: 1;
 }
+
 /*最上排紫色*/
 .tool {
     height: 25px;
@@ -26,23 +34,25 @@ a:hover
 }
 
 .container {
-    padding-top: 25px;
-    width: 1200px;
+    padding-top: 120px;
+    width: 1180px;
     height: 2200px;
     background-color: #FAFAFC;
     /* background-color: aqua; */
     margin: 0 auto;
 }
+
 /*header位置*/
 .header-position {
-    width: 1240px;
+    width: 1230px;
     margin: 0 auto;
+  
 }
 
 .tool-list li {
     display: inline;
     list-style-type: none;
-    padding-right: 2em;
+    padding-right: 1.5em;
     font-size: 13px;
 }
 
@@ -51,22 +61,25 @@ a:hover
 }
 
 .home {
-    margin-right: 1em;
+    margin-right: 0.5em;
+}
+/*最右邊設為首頁*/
+.set-home {
+    padding-left: 450px;
 }
 
-.set-home {
-    padding-left: 400px;
-}
 /*inout位置*/
 .input {
     width: 500px;
     padding-left: 0.7em;
     padding-top: 0.7em;
 }
+
 /*小鉛筆位置*/
-.input img{
+.input img {
     vertical-align: bottom;
 }
+
 /*輸入框設定*/
 .search-input {
     height: 50px;
@@ -91,29 +104,92 @@ a:hover
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
+/*熱門列*/
 .search-list {
-    width: 700px;
+    width: 730px;
     margin: 0;
     margin-left: 0.7em;
     padding-inline-start: 0;
 }
 
+.search-list a {
+    color: #324FE1;
+}
+
 .search-list li {
     font-size: 13.5px;
     display: inline;
-    list-style-type: none;
     padding-right: 1em;
 }
-
+/*登入的三個圖片*/
 .login {
     width: 200px;
     vertical-align: bottom;
-    padding-left: 50px;
+    padding-left: 10px;
 
 }
-
+/*登入下方廣告連結*/
 .login-right {
-    padding-left: 220px;
+    padding-left: 190px;
     font-size: 13.5px;
+}
+/*內容部分*/
+.left-tool {
+    position: absolute;
+    display: inline-block;
+    width: 140px;
+}
+
+.right-content {
+    position: absolute;
+    left: 320px; /*左邊有目錄*/
+    display: inline-block;
+    /* background-color: aqua; */
+}
+
+/*左邊目錄*/
+.colume {
+    position: absolute;
+    display: inline-block;
+    font-size: 15px;
+    width: 70px;
+}
+
+.right {
+    position: absolute;
+    left: 70px;
+}
+
+.colume ul {
+    padding-inline-start: 0;
+    margin: 0 10px 0 0;
+    border-bottom: #ccc solid 1px;
+}
+
+.colume ul li {
+    padding: 5px 0 5px 0;
+}
+
+.colume ul li a {
+    color: #1D1DA3;
+}
+
+#red {
+    color: #EF4E5E;
+}
+
+/*不斷更新橫條區*/
+.newsbar{
+    width: 640px;
+    height: 35px;
+    margin: 5px 0 5px 0;
+    background-image: url('../asset/newsbar.PNG');
+    background-size: 100% auto;
+    line-height: 35px;
+}
+
+.newsbar a{
+    color: white;
+    margin-left: 115px;  
+   
 }
