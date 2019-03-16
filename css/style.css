@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    background-color: #FAFAFC;
+    font-family: Microsoft JhengHei;
+}
+
+/*設定超連結預設無底線*/
+a {
+    text-decoration: none;
+}
+/*滑過才有底線*/
+a:hover
+{
+    text-decoration:underline;
+}
+/*標頭固定*/
+.header {
+    position: fixed;
+    width: 100vw;
+}
+/*最上排紫色*/
+.tool {
+    height: 25px;
+    background-color: #2D1152;
+    color: white;
+}
+
+.container {
+    padding-top: 25px;
+    width: 1200px;
+    height: 2200px;
+    background-color: #FAFAFC;
+    /* background-color: aqua; */
+    margin: 0 auto;
+}
+/*header位置*/
+.header-position {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.tool-list li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 2em;
+    font-size: 13px;
+}
+
+.tool-list a {
+    color: white;
+}
+
+.home {
+    margin-right: 1em;
+}
+
+.set-home {
+    padding-left: 400px;
+}
+/*inout位置*/
+.input {
+    width: 500px;
+    padding-left: 0.7em;
+    padding-top: 0.7em;
+}
+/*小鉛筆位置*/
+.input img{
+    vertical-align: bottom;
+}
+/*輸入框設定*/
+.search-input {
+    height: 50px;
+    width: 550px;
+    font-size: 20px;
+    color: #835F5F;
+    padding-left: 1em;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.search-btn {
+    width: 80px;
+    height: 50px;
+    background-color: #0F69FF;
+    color: white;
+    font-size: 20px;
+    border: 0;
+    border-collapse: separate;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search-list {
+    width: 700px;
+    margin: 0;
+    margin-left: 0.7em;
+    padding-inline-start: 0;
+}
+
+.search-list li {
+    font-size: 13.5px;
+    display: inline;
+    list-style-type: none;
+    padding-right: 1em;
+}
+
+.login {
+    width: 200px;
+    vertical-align: bottom;
+    padding-left: 50px;
+
+}
+
+.login-right {
+    padding-left: 220px;
+    font-size: 13.5px;
+}
