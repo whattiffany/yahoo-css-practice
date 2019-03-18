@@ -13,6 +13,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 /*取消li項目符號*/
 li {
     list-style-type: none;
@@ -24,6 +25,8 @@ li {
     width: 100vw;
     background-color: #FAFAFC;
     z-index: 1;
+    border-bottom:none;
+   
 }
 
 /*最上排紫色*/
@@ -34,6 +37,7 @@ li {
 }
 
 .container {
+    position: relative;
     padding-top: 120px;
     width: 1180px;
     height: 2200px;
@@ -46,7 +50,7 @@ li {
 .header-position {
     width: 1230px;
     margin: 0 auto;
-  
+
 }
 
 .tool-list li {
@@ -63,6 +67,7 @@ li {
 .home {
     margin-right: 0.5em;
 }
+
 /*最右邊設為首頁*/
 .set-home {
     padding-left: 450px;
@@ -104,6 +109,7 @@ li {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
 /*熱門列*/
 .search-list {
     width: 730px;
@@ -121,6 +127,7 @@ li {
     display: inline;
     padding-right: 1em;
 }
+
 /*登入的三個圖片*/
 .login {
     width: 200px;
@@ -128,21 +135,25 @@ li {
     padding-left: 10px;
 
 }
+
 /*登入下方廣告連結*/
 .login-right {
     padding-left: 190px;
     font-size: 13.5px;
 }
+
 /*內容部分*/
 .left-tool {
     position: absolute;
     display: inline-block;
     width: 140px;
+    height:900px;
 }
 
 .right-content {
     position: absolute;
-    left: 320px; /*左邊有目錄*/
+    left: 150px;
+    /*左邊有目錄*/
     display: inline-block;
     /* background-color: aqua; */
 }
@@ -159,7 +170,11 @@ li {
     position: absolute;
     left: 70px;
 }
-
+.visa-ad{
+    position: absolute;
+    display: inline-block;
+    margin-top: 600px;
+}
 .colume ul {
     padding-inline-start: 0;
     margin: 0 10px 0 0;
@@ -179,8 +194,8 @@ li {
 }
 
 /*不斷更新橫條區*/
-.newsbar{
-    width: 640px;
+.newsbar {
+    width: 636px;
     height: 35px;
     margin: 5px 0 5px 0;
     background-image: url('../asset/newsbar.PNG');
@@ -188,8 +203,189 @@ li {
     line-height: 35px;
 }
 
-.newsbar a{
+.newsbar a {
     color: white;
-    margin-left: 115px;  
-   
+    margin-left: 115px;
+
+}
+
+/*news tab*/
+.news-list {
+    width: 636px;
+    padding-inline-start: 0;
+    margin-block-end: 0;
+    border: #ccc solid 1px;
+    border-bottom:none;
+    background-color: #F4F4F4;
+    font-size: 0;
+}
+
+.news-list li {
+    width: 100px;
+    display: inline-block;
+    padding: 5px 0 5px 0;
+    list-style: none;
+    border-left: #ccc solid 1px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.news-content {
+    position: relative;
+    width: 636px;
+    height: 225px;
+    border: #ccc solid 1px;
+    background-color: white;
+    font-size: 30px;
+    display: none;
+}
+
+.news-content a {
+    position: relative;
+    padding-left: 11px;
+    color: white;
+}
+
+.active {
+ border-top: #7300FF solid 2.5px; 
+    background-color: white;
+}
+
+.tabpic {
+    width: 340px;
+    height: 190px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    background-image: url("../asset/tab1-pic.PNG");
+    background-size: 100% auto;
+    text-align: left;
+    font-size: 24px;
+    line-height: 340px;
+
+}
+
+.tabtext {
+    width: 290px;
+    height: 215px;
+    position: absolute;
+    left: 340px;
+    background-image: url("../asset/tab1.PNG");
+    background-size: 100% auto;
+}
+
+/*廣告小橫幅*/
+.ad-block {
+    position: relative;
+    width: 636px;
+    height: 106px;
+    border: #ccc solid 1px;
+    margin: 15px 0 15px 0;
+}
+
+.ad-block img {
+    position: absolute;
+}
+
+.adtext {
+    position: absolute;
+    top: 5px;
+    left: 205px;
+    font-size: 13px;
+}
+
+.adtext a {
+    color: #324FE1;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.left-ad{
+    position: absolute;
+    display: inline-block;
+
+}
+.right-ad{
+    position: absolute;
+    left:650px;
+    display: inline-block;
+    width: 380px;
+    height: 1000px;
+    padding-top: 5px;
+
+}
+.Car-ad{
+    height: 220px;
+    /*圖片垂直水平置中*/
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.sale-list{
+    width: 636px;
+    padding-inline-start: 0;
+    margin-block-end: 0;
+    border: #ccc solid 1px;
+    border-bottom:none;
+    background-color: #F4F4F4;
+}
+
+.sale-list li{
+    width: 100px;
+    display: inline-block;
+    padding: 5px 0 5px 0;
+    border-left: #ccc solid 1px;
+    text-align: center;
+}
+.active2 {
+    width: 101px;
+    padding: 2px 10px 5px 10px;
+    background-color: white;
+    border-top: #7300FF solid 2.5px;
+}
+
+.sale-content{
+    position: relative;
+    width: 636px;
+    height: 200px;
+    border: #ccc solid 1px;
+    background-color: white;
+}
+
+.news-bottom{
+    margin-top: 20px; 
+    border: #ccc solid 1px;
+}
+.news-btmlist{
+    background-color:#400090;
+    color: white;
+    width: 636px;
+    padding-inline-start: 0;
+    margin-block-end: 0;
+    font-size: 0;
+}
+
+.news-btmlist li{
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    padding: 7px 0 7px 0;
+    font-size:16px;
+    /* font-weight: bold; */
+}
+
+.news-btmlist li:hover{
+    background-color: #7300FF;
+}
+
+.ad{
+    height: 195px;
+    border: #ccc solid 1px;
+}
+
+.travel-ad{
+    height: 195px;
+    margin-top: 10px; 
+    border: #ccc solid 1px;
 }
