@@ -1,2 +1,2 @@
-# yahoo-css-practice
-Yahoo 首頁切版練習
+# Yahoo 首頁切版練習
+使用到滑鼠移動時的tab切換
